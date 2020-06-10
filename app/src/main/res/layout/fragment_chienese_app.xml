@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".fragments.ChieneseAppFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_applist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_12dp"
+            android:layout_marginBottom="@dimen/_12dp"
+            app:layout_constraintBottom_toTopOf="@+id/ll_bottom_tab"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:background="@color/color_000000"
+            android:layout_marginBottom="@dimen/_5dp"
+            app:layout_constraintBottom_toTopOf="@+id/ll_bottom_tab" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_12dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_scan_apps"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginEnd="@dimen/_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:text="@string/find_chienese_apps"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_13dp"
+                tools:ignore="SpUsage" />
+
+            <Button
+                android:id="@+id/btn_alternative_apps"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:text="@string/alternative_apps"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_13dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

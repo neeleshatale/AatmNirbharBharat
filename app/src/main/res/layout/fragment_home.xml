@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:context=".fragments.HomeFragment">
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/circle_view"
+            android:layout_width="@dimen/_250dp"
+            android:layout_height="@dimen/_250dp"
+            android:layout_marginTop="@dimen/_85dp"
+            CircleProgressView:cpv_autoTextSize="true"
+            CircleProgressView:cpv_barColor="@color/color_68DBEA"
+            CircleProgressView:cpv_barWidth="@dimen/_35dp"
+            CircleProgressView:cpv_innerContourSize="0dp"
+            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_outerContourSize="0dp"
+            CircleProgressView:cpv_rimColor="@color/color_f30417"
+            CircleProgressView:cpv_rimWidth="@dimen/_35dp"
+            CircleProgressView:cpv_seekMode="true"
+            CircleProgressView:cpv_showUnit="true"
+            CircleProgressView:cpv_spinColor="@color/color_68DBEA"
+            CircleProgressView:cpv_textColor="@color/color_68DBEA"
+            CircleProgressView:cpv_textScale="1"
+            CircleProgressView:cpv_unit="%"
+            CircleProgressView:cpv_unitColor="@color/color_68DBEA"
+            CircleProgressView:cpv_unitPosition="right_top"
+            CircleProgressView:cpv_unitScale="1"
+            CircleProgressView:cpv_value="0"
+            CircleProgressView:layout_constraintEnd_toEndOf="parent"
+            CircleProgressView:layout_constraintStart_toStartOf="parent"
+            CircleProgressView:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_progress_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="5 Chienes app installed on your device"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/_15dp"
+            CircleProgressView:layout_constraintTop_toBottomOf="@+id/circle_view"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:id="@+id/ll_congratulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            CircleProgressView:layout_constraintTop_toBottomOf="@+id/circle_view">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/congratulations"
+                android:textColor="@color/color_00b500"
+                android:textSize="@dimen/_35dp"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/let_s_build_a_stronger_india"
+                android:textColor="@color/color_00b500"
+                android:textSize="@dimen/_19dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

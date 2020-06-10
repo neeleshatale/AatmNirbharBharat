@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="find_chienese_apps">Scan Chinese Apps</string>
+    <string name="app_name">आत्मनिर्भर भारत</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="_1_0">1.0</string>
+    <string name="tiktok">TikTok</string>
+
+    <string name="alternative_apps">Alternative Apps</string>
+    <string name="chienese_apps">Chinese Apps</string>
+    <string name="coming_sonn">Coming Sonn…</string>
+    <string name="home">Home</string>
+    <string name="scanning">Scanning…</string>
+    <string name="apps">Apps</string>
+    <string name="feed">Feed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="let_s_build_a_stronger_india">Let\'s build a stronger India</string>
+    <string name="install">Install</string>
+    <string name="not_installed">Not Installed</string>
+    <string name="installed">Insalled</string>
+    <string name="open">Open</string>
+</resources>
